@@ -1,0 +1,87 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix oda: <https://odahub.io/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ivoam: <http://www.ivoa.net/rdf/messenger#> .
+@prefix ivoauat: <http://www.ivoa.net/rdf/uat#> .
+
+oda:spi-acs a oda:Workflow ;
+    rdfs:label "spi_acs" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=spi_acs" ;
+    skos:related oda:spectrometer-on-integral,
+        ivoam:Gamma-ray .
+
+oda:cta a oda:Workflow ;
+    rdfs:label "cta" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=cta" ;
+    skos:related oda:cherenkov-telescope-array,
+        oda:cherenkov-telescope-array-observatory,
+        ivoam:Gamma-ray .
+
+oda:hess a oda:Workflow ;
+    rdfs:label "hess" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=hess" ;
+    skos:related oda:high-energy-stereoscopic-system,
+        ivoam:Gamma-ray .
+
+oda:isgri a oda:Workflow ;
+    rdfs:label "isgri" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=isgri" ;
+    skos:related oda:imager-on-board-the-integral-satellite,
+        ivoam:X-ray .
+
+oda:jemx a oda:Workflow ;
+    rdfs:label "jemx" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=jemx" ;
+    skos:related oda:joint-european-x-ray-monitor,
+        ivoam:X-ray .
+
+oda:icecube a oda:Workflow ;
+    rdfs:label "icecube" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=icecube" ;
+    skos:related oda:iceCube-neutrino-observatory,
+        ivoam:Neutrino .
+
+oda:antares a oda:Workflow ;
+    rdfs:label "antares" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=antares" ;
+    skos:related oda:astronomy-with-a-neutrino-telescope-and-abyss-environmental-research-project,
+        ivoam:Neutrino .
+
+oda:gw a oda:Workflow ;
+    rdfs:label "gw" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=gw" ;
+    skos:related oda:laser-interferometer-gravitational-wave-observatory,
+        oda:virgo,
+        ivoauat:gravitational-waves .
+
+oda:desi-legacysurvey-old a oda:Workflow ;
+    rdfs:label "legacysurvey" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=legacysurvey" ;
+    skos:altLabel "https://www.legacysurvey.org/status/"
+    skos:related oda:v-ctor-m.-blanco-telescope,
+        oda:nicholas-u.-mayall-telescope,
+        oda:bok-telescope,
+        ivoam:Infrared,
+        ivoam:Optical .
+
+oda:desi-legacy-survey a oda:Workflow ;
+    rdfs:label "desi_legacy_survey" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=desi_legacy_survey" ;
+    skos:altLabel "https://www.legacysurvey.org/status/"
+    skos:related oda:v-ctor-m.-blanco-telescope,
+        oda:nicholas-u.-mayall-telescope,
+        oda:bok-telescope .
+        ivoam:Infrared,
+        ivoam:Optical .
+
+oda:sgwb a oda:Workflow ;
+    rdfs:label "sgwb" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=sgwb" ;
+    skos:related ivoauat:gravitational-waves .
+
+oda:grb-detection a oda:Workflow ;
+    rdfs:label "grb_detection" ;
+    dcterms:identifier "https://www.astro.unige.ch/mmoda/?instrument=grb_detection" ;
+    skos:related ivoam:Gamma-ray .
